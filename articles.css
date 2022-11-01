@@ -1,0 +1,80 @@
+.articles {
+    background-color: hsl(0, 0%, 98%);
+    padding-bottom: 2.5rem;
+}
+
+.article__grid {
+    display: grid;
+    flex-wrap: wrap;
+    /* mobile first */
+    grid-template-columns: 1fr;
+    gap: 1.50rem;
+
+
+    /* これだとメディアクエリ書かなくていい 6/7 19:40 */
+    /* repeat(何回, どのくらい) */
+    /* grid-template-columns: repeat(auto-fit, minmax(14.375rem, 1fr)); */
+}
+
+
+
+.article__item {
+    height: 100%;
+    /* ⭐widthをつけるとcol効かない */
+
+    border-radius: 10px;
+
+    transition: scale 200ms ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 4px 10px 2px;;
+}
+
+.article__item:hover {
+    scale: 1.05;
+}
+
+
+.article__image {
+    /* 6/7 25:00　absolute height を入れる */
+    height: 12.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: auto;
+
+    border-radius: 5px 5px 0 0;
+
+}
+
+/* .article__image img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}     */
+
+.article__text {
+    height: 10.5rem;
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+    padding: 1.875rem 1.875rem 2.5rem 1.875rem;
+
+}   
+
+.article__author {
+color: hsl(233, 26%, 24%);
+font-size: 9px;
+
+
+}
+
+.article__title {
+    color: black;
+    padding: 15px 0;
+    font-size: 15px;
+
+}
+
+.article__description {
+color: hsl(233, 26%, 24%);
+font-size: 11px;
+
+}

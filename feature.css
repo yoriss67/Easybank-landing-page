@@ -1,0 +1,35 @@
+.feature {
+    background-color:  hsl(220, 16%, 96%);
+    width: 100%;
+    /* 動画で調整 */
+    padding: 7rem 2rem;
+
+}
+
+.feature-inside {
+    max-width: 69.375rem;
+    margin: 0 auto;
+
+}
+
+
+
+.feature__grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feature__item {
+    /* お手本 */
+    /* padding: 0.9375rem; */
+    padding: 1%;
+}
+
+.feature__title {
+    padding: 1.5rem 0;
+}
+
+.feature__description {
+    font-size: 12px;
+    margin-bottom: 2rem;
+}

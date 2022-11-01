@@ -1,0 +1,105 @@
+.footer {
+    background-color: #2D314D;
+    color: white;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.footer a {
+    color: white;
+
+}
+
+
+.footer__logo {
+    /* 7/7 19:10  the margin did
+work for the other elements because those are divs and is by nature they are
+by default display block elements */
+    display: inline-block;
+    margin-bottom: 1.875rem;
+
+}
+
+
+
+.footer__social {
+    margin-bottom: 1.875rem;
+}
+
+.footer__social a {
+    display: inline-block;
+}
+
+/* 7/7 20:00⭐not last-childがないときれいにセンターにならない */
+.footer__social a:not(:last-child) {
+    margin-right: 1rem
+}
+
+.footer__social path:hover {
+    fill:  hsl(136, 65%, 51%);
+}
+
+.footer__links a:hover {
+    color: hsl(136, 65%, 51%);
+}
+
+
+
+
+
+
+
+
+.footer__links {
+
+    display: flex;
+    /* ⭐7/7 21:00 */
+    flex-direction: column;
+    /*  because it's vertical align items should control the width of
+the children  */
+    align-items: center;
+    font-size: 0.9375rem;
+
+}
+
+.footer__links a {
+    /* a 自体にline-height */
+    line-height: 2.5;
+    color: white;
+}
+
+.col1 {}
+
+.col2 {
+    /* margin-bottom: 1.875rem; */
+}
+
+.footer__cta {
+    margin: 1.875rem 1.875rem 2.5rem 1.875rem;
+
+}
+
+.footer__cta .button:hover {
+    /*7/7 56:00  opaやっただけだと背景と混ざるから❌
+    globalを変えましょう */
+    /* opacity: .7; */
+    color: white;
+}
+
+.footer__copyright {
+    font-size: 0.9375rem;
+    color: hsl(233, 8%, 62%);
+
+
+}
+
+.attribution {
+    margin-top: 1.875rem;
+
+}
+
+
+/* desktop */
+
+/* 4 cols 2rows 
+social, links1, links2, cta */

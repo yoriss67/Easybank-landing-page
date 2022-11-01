@@ -1,0 +1,264 @@
+/* 1024px / 16px */
+/* 対象　/　基準 */
+/* most consistent in browsers */
+
+
+
+/* すまほ?>>　Medium  640px / 16px = 40em*/
+
+/* Large 1024px / 16px = 64em*/
+
+/* extra L 1400px / 16px = 87.5em */
+
+
+/* @media screen and (min-width: 768px) {
+    （ここにPC用スタイルを記述）
+    }
+     
+    @media screen and (max-width: 767px) {
+    （ここにモバイル用スタイルを記述）
+    } */
+
+
+
+
+
+@media (max-width: 895px) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 896px) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+
+/* headerの配置 */
+@media screen and (min-width: 895px) {
+  .flex-jc-sb {
+    justify-content: space-evenly;
+  }
+}
+
+/* ------------------------------------------------------- */
+
+/* hero */
+/* tablet? */
+/* 40em = 640px */
+@media (min-width: 540px) {
+  .hero__image {
+    min-height: 25rem;
+    background-position: center 70%;
+  }
+
+  .hero__image::before {
+    background-size: 52%;
+  }
+
+}
+
+
+/* desktop */
+@media screen and (min-width: 896px) {
+  .hero {
+    display: flex;
+    /* 😗flex-direction: row-reverse; */
+
+  }
+
+
+  .hero__image {
+    position: relative;
+    /* 👩‍🎓「flex: 1;」は、「flex-grow: 1;」、「flex-shrink: 1;」、「flex-basis: 0;」の3つ同時に指定 */
+    flex: 1.7;
+    /* 😗イコール */
+    order: 2;
+    background-image: url(./images/bg-intro-desktop.svg);
+    /* 初期設定では左上（0% 0%）きたああああ */
+    background-position: 10% 56%;
+    /* background-position: 0% 83%; */
+
+    background-size: 170%;
+    width: 100%;
+
+
+    /* 4/7 29:00 */
+    /* 自作 */
+    height: 38rem;
+
+  }
+
+  .hero__image::before {
+    /* mockupです */
+    height: 50rem;
+    width: 100%;
+    /* 背景画像のサイズ */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /*❤️ background-position: 5% -90%; */
+    background-position: center -130px;
+
+  }
+
+  .hero__text {
+    flex: 1;
+    text-align: left;
+    padding: 10% 10%;
+    vertical-align: middle;
+    width: 50%;
+  }
+
+}
+
+/* -------------------------------------- */
+
+
+/* FEATURE */
+
+/* ブレークポイント　https://qiita.com/akatsuki174/items/53b7367b04ed0b066bbf */
+/* 🤔px どれ？ */
+/* mobile */
+@media screen and (max-width: 576px) {
+  .feature {
+    text-align: center;
+  }
+
+  .feature .pall {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* tablet */
+
+
+/* desktop */
+@media screen and (min-width: 896px) {
+  .feature-inside p {
+    max-width: 560px;
+  }
+
+}
+
+/* ----------------------------------------- */
+
+/* ARTICLES */
+
+/* tablet */
+@media screen and (min-width: 768px) {
+  .article__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .article__text {
+    padding: 1.875rem 1.5625rem;
+
+
+  }
+
+}
+
+/* desktop */
+
+@media screen and (min-width: 992px) {
+  .article__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .article__text {
+    font-size: 10px;
+    height: 13.5rem;
+    /* padding: 6.875rem 1.5625rem; */
+
+  }
+
+
+
+}
+
+
+
+/* footer */
+
+@media screen and (min-width: 768px) {
+
+  .grid-container {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .footer__links {
+    align-items: baseline;
+  }
+
+
+  /* grid */
+  .grid-container {
+    display: grid;
+    grid-template-columns:  2fr 1fr 1fr 3fr;
+    /* grid-template-rows: repeat(2, 1fr); */
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    /* 複数のrowを同じのがまたぐときは２回言う */
+    "logo links1 links2 cta"
+    "social links1 links2 copyright";
+
+    justify-items: start;
+    text-align: left;
+
+
+  }
+
+  .footer__logo {
+    grid-area: logo;
+  }
+
+  .col1 {
+    grid-area: links1;
+  }
+
+  .col2 {
+    grid-area: links2;
+
+
+  }
+
+  .footer__cta {
+    grid-area: cta;
+
+    /* margin: 0 0 1.875rem 0; */
+    justify-self: end;
+    text-align: right;
+
+    margin: 0;
+
+  }
+
+  .footer__social {
+    grid-area: social;
+    margin: 0;
+
+  }
+
+  .footer__copyright {
+    grid-area: copyright;
+
+    justify-self: end;
+    text-align: right;
+
+    margin:0.9375rem 0 1.825rem 1.825rem;
+  }
+
+
+
+
+
+
+
+ 
+
+
+}
