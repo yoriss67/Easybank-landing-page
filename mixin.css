@@ -39,7 +39,7 @@
 /* headerの配置 */
 @media screen and (min-width: 895px) {
   .flex-jc-sb {
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 }
 

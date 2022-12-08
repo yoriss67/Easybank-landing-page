@@ -1,0 +1,14 @@
+mobile first でつくる
+
+
+29:00
+
+  .hide-for-mobile {
+    
+  }
+  とかcssを先に作る
+
+
+3/7
+
+6:50まできた

@@ -87,6 +87,7 @@ header .overlay {
 #btnHamburger {
     position: relative;
     cursor: pointer;
+    margin-right: 0px;
     /* クリック範囲を広げる */
 }
 
